@@ -1,0 +1,306 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+:root{
+    --b1: #b99976;
+    --b2: #d2b48c;
+    --ligth: #e5d3b3;
+    --ligther: #f7ebd7;
+    --b4: #987554;
+    --b5: #664229;
+    --darkest: #331f11;
+    --darkestTransp: #331f11f1;
+    --ligtherTransp: #f7ebd756;
+}
+
+body::-webkit-scrollbar{
+    width: 5px;
+    background-color: var(--darkestTransp);
+}
+
+body{
+    margin: 0px;
+    background-color: var(--ligther);
+    width: 99.99VW;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+
+
+
+/* section one */
+#secOne{
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--b5);
+    background-image: linear-gradient(to bottom left, var(--darkestTransp), var(--ligther));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#initText{
+    height: 60vh;
+    width: 90vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+}
+
+.initTextSubDiv{
+    font-family: 'Rowdies', cursive;
+    color: var(--ligther);
+    transition: opacity 1.3s;
+}
+
+#dwayne, #rock{
+    text-align: start;
+    font-size: 5vh;
+}
+
+#the {
+    text-align: end;
+    font-size: 5vh;
+}
+
+#johnson{
+    text-align: center;
+    font-size: 5vh;
+}
+
+#mainText{
+    text-align: center;
+    font-size: 2vh;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.initTextSubDiv.fade{
+    opacity: 0.0;
+}
+
+
+/* section two */
+
+#secTwo{
+    margin: 0px;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.frameDiv{
+    height: 92vh;
+    width: 92vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    border: solid 1px var(--darkestTransp);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+
+/* IMAGE CSS */
+.imgDiv{
+    height: 60%;
+    width: 90%;
+    border: solid 1px var(--darkestTransp);
+    border-radius: 0.5em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+img{
+    height: 72%;
+}
+
+
+/* butons */
+.navBtnDiv{
+    height: 10%;
+    width: 40%;
+    border-radius: 3em;
+}
+
+.navInitialBtn{
+    height: 100%;
+    width: 100%;
+    background: none;
+    border: none;
+    border-radius: 3em;
+    font-size: 300%;
+    font-family: 'Rowdies', cursive;
+    color: var(--ligth);
+    transition: 0.8s;
+}
+
+.navInitialBtn:hover{
+    color: #331f11;
+    font-size: 320%;
+    box-shadow: 0px 5px 0.4em -0.3em var(--darkestTransp);
+    transform: translateY(-2px) ;
+    transition-duration: 0.28s;
+    cursor: pointer;
+}
+
+button:active {
+    color: var(--ligth);
+    border-color: var(--darkestTransp);
+    box-shadow: 0px -1px -0.4em 0.4em #a2522c;
+    transform: translateY(2px) ;
+}
+
+
+
+
+/* about coverDiv */
+
+#parentCoverAbout{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color: var(--darkestTransp);
+    z-index: 100;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+
+}
+
+#parentCoverAbout.fade{
+    opacity: 0.0;
+}
+
+#aboutCoverDiv{
+    align-self: center;
+    width: 82%;
+    background-color: var(--ligtherTransp);
+    padding: 3vh 3vw;
+    margin-top: 6vh;
+    border: 1px solid var(--darkestTransp);
+    border-radius: 0.5em;
+}
+
+
+
+#aboutTitle{
+    font-size: 4vh;
+    font-family: 'Rowdies', cursive;
+    color: var(--darkest);
+}
+
+#aboutText{
+    font-family: 'Quicksand', sans-serif;
+    color: var(--ligther);
+    margin-top: 2vh;
+    font-size: 2vh;
+}
+
+
+/* wrest cover div */
+
+#parentWrestAbout{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color: var(--darkestTransp);
+    z-index: 100;
+    transition: opacity 0.3s;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#parentWrestAbout.fade{
+    opacity: 0.0;
+}
+
+#wrestCoverDiv{
+    align-self: center;
+    width: 82%;
+    background-color: var(--ligtherTransp);
+    padding: 3vh 3vw;
+    margin-top: 6vh;
+    border: 1px solid var(--darkestTransp);
+    border-radius: 0.5em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.wrestListItem{
+    width: 90%;
+    border-radius: 0.5em;
+    background-color: var(--ligtherTransp);
+    margin-top: 2vh;
+    padding: 2% 5%;
+}
+
+.wrestTitle{
+    font-size: 2vh;
+    font-family: 'Rowdies', cursive;
+    color: var(--b5);
+}
+
+.wrestText{
+    font-size: 2vh;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--ligther);
+}
+
+/* movies layer */
+
+#parentMoviesAbout{
+    position: absolute;
+    height: 100%;
+    width: 100vw;
+    background-color: var(--darkestTransp);
+    z-index: 100;
+    transition: opacity 0.5s;
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+}
+
+#parentMoviesAbout.fade{
+    opacity: 0.0;
+}
+
+#moviesCoverDiv{
+    width: 90%;
+    
+}
+
+
+
+
+.exitDiv{
+    text-align: end;
+    align-items: end;
+}
+
+.exitBtn{
+    background: none;
+    border: none;
+    font-size: 2.5vh;
+    font-weight: bolder;
+    color: var(--ligtherTransp);
+}
