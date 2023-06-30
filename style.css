@@ -1,0 +1,140 @@
+@import url('https://fonts.googleapis.com/css2?family=Caprasimo&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Abril+Fatface&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Quicksand&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Rowdies&display=swap');
+
+*{
+    margin: 0;
+    padding: 0%;
+}
+
+:root{
+    --b1: #b99976;
+    --b2: #d2b48c;
+    --ligth: #e5d3b3;
+    --ligther: #f7ebd7;
+    --b4: #987554;
+    --b5: #664229;
+    --darkest: #331f11;
+    --darkestTransp: #331f11f1;
+    --ligtherTransp: #f7ebd756;
+}
+
+html, body{
+    overscroll-behavior: smooth;
+}
+
+body{
+    background-color: var(--ligther);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+
+#mainDiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.initialDiv{
+    height: 92vh;
+    width: 92vw;
+    margin-top: 4vh;
+    margin-bottom: 4vh;
+    margin-left: 4vw;
+    margin-right: 4vw;
+    border: solid 1px var(--darkest);
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.picInside{
+    width: 90%;
+    height: 70%;
+    background-color: #66422938;
+    border-radius: 2em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img{
+    height: 90%;
+}
+
+.navTitle{
+    width: 70%;
+    height: 20%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button{
+    background: none;
+    background-color: none;
+    border: none;
+    font-family: 'Abril Fatface', cursive;
+    font-size: 100px;
+    color: var(--b5);
+}
+
+button h2{
+    font-family: 'Abril Fatface', cursive;
+    font-size: 100px;
+    color: var(--b5);
+}
+
+
+
+/* about cover */
+
+
+.coverParent{
+    position: absolute;
+    width: 100vw;
+    height: 100%; 
+    background-color: var(--darkestTransp);
+}
+
+.coverDiv{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+
+/* cover about id elements */
+#aboutCoverContent{
+    width: 80%;
+    margin-top: 7vh;
+    text-align: justify;
+    padding: 6%;
+    border: solid 1px var(--darkestTransp);
+    border-radius: 2em;
+    background-color: var(--ligtherTransp);
+}
+
+#aboutTitle{
+    font-size: 5vh;
+    margin-bottom: 3vh;
+    font-family: 'Rowdies', cursive;
+    color: var(--ligther);
+}
+
+#aboutText{
+    font-size: 3vh;
+    font-family: 'Quicksand', sans-serif;
+    color: var(--ligther);
+}  
